@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kopu Games</title>
+<meta name="description" content="Kopu Games makes small, fair puzzle games for phones: Peel Away, Slide Out and TiltSort.">
+<style>
+  :root { --bg:#ffffff; --fg:#1d2230; --muted:#5b6478; --line:#e4e7ee; --accent:#c4324a; --card:#f6f7fa; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#14171f; --fg:#e8ebf2; --muted:#a4acbe; --line:#2a2f3c; --accent:#ff8a7a; --card:#1c2029; } }
+  :root[data-theme="dark"] { --bg:#14171f; --fg:#e8ebf2; --muted:#a4acbe; --line:#2a2f3c; --accent:#ff8a7a; --card:#1c2029; }
+  html { background:var(--bg); }
+  body { margin:0; padding:0 16px 64px; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; }
+  header { padding:48px 0 16px; }
+  h1 { font-size:2.4rem; margin:0 0 4px; }
+  p.tag { color:var(--muted); margin:0; }
+  .games { display:grid; gap:16px; grid-template-columns:1fr; margin:32px 0; }
+  @media (min-width:600px) { .games { grid-template-columns:repeat(3,1fr); } }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; }
+  .card h2 { font-size:1.15rem; margin:0 0 4px; }
+  .card p { margin:0; color:var(--muted); font-size:0.95rem; }
+  .swatch { height:72px; border-radius:10px; margin-bottom:12px; }
+  footer { border-top:1px solid var(--line); padding-top:16px; color:var(--muted); font-size:0.95rem; }
+  a { color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <h1>Kopu Games</h1>
+  <p class="tag">Small, fair puzzle games for phones. One mechanic each, levels you can always solve, no timers.</p>
+</header>
+
+<section class="games">
+  <div class="card">
+    <div class="swatch" style="background:linear-gradient(160deg,#ff7a59,#c4324a)"></div>
+    <h2>Peel Away: Pin Sort Puzzle</h2>
+    <p>Pull the pins that hold stacked plates. Sort each color into its dock and peel the board clean.</p>
+  </div>
+  <div class="card">
+    <div class="swatch" style="background:linear-gradient(160deg,#36a0d2,#1c3e8c)"></div>
+    <h2>Slide Out - Arrow Slide Puzzle</h2>
+    <p>Tap arrows to slide pieces off the board. Mirrors bend paths, gates take their colors in order.</p>
+  </div>
+  <div class="card">
+    <div class="swatch" style="background:linear-gradient(160deg,#8c5ce6,#3c2278)"></div>
+    <h2>TiltSort - Gravity Match</h2>
+    <p>Rotate the jar and let the tiles fall. Line up three of a color to clear them within the move limit.</p>
+  </div>
+</section>
+
+<footer>
+  <p><a href="privacy.html">Privacy policy</a> &middot; Support: <a href="mailto:support@kopugames.com">support@kopugames.com</a></p>
+  <p>&copy; 2026 Kopu Games</p>
+</footer>
+</main>
+</body>
+</html>
