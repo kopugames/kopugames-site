@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 50 50" role="img" aria-label="Kopu Games">
+  <rect x="2" y="26" width="20" height="20" rx="5.6" fill="#F0645A"/>
+  <rect x="25" y="26" width="20" height="20" rx="5.6" fill="#3F8DE8"/>
+  <rect x="2" y="3" width="20" height="20" rx="5.6" fill="#7B4FD6"/>
+  <rect x="25" y="1.5" width="20" height="20" rx="5.6" fill="#FF9F1C" transform="rotate(18 35 11.5)"/>
+</svg>

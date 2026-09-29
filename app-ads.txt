@@ -1,0 +1,5 @@
+# app-ads.txt for Kopu Games (https://kopugames.com/app-ads.txt)
+# Authorised ad sellers for every app whose Play listing names kopugames.com as the developer website.
+# Google AdMob (Peel Away, Slide Out, TiltSort)
+google.com, pub-4692097116457768, DIRECT, f08c47fec0942fa0
+# Unity Ads (Math Maniac): paste the line from Unity Dashboard > Monetization > app-ads.txt here.

@@ -3,57 +3,236 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Kopu Games</title>
-<meta name="description" content="Kopu Games makes small, fair puzzle games for phones: Peel Away, Slide Out and TiltSort.">
-<style>
-  :root { --bg:#ffffff; --fg:#1d2230; --muted:#5b6478; --line:#e4e7ee; --accent:#c4324a; --card:#f6f7fa; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#14171f; --fg:#e8ebf2; --muted:#a4acbe; --line:#2a2f3c; --accent:#ff8a7a; --card:#1c2029; } }
-  :root[data-theme="dark"] { --bg:#14171f; --fg:#e8ebf2; --muted:#a4acbe; --line:#2a2f3c; --accent:#ff8a7a; --card:#1c2029; }
-  html { background:var(--bg); }
-  body { margin:0; padding:0 16px 64px; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  main { max-width:760px; margin:0 auto; }
-  header { padding:48px 0 16px; }
-  h1 { font-size:2.4rem; margin:0 0 4px; }
-  p.tag { color:var(--muted); margin:0; }
-  .games { display:grid; gap:16px; grid-template-columns:1fr; margin:32px 0; }
-  @media (min-width:600px) { .games { grid-template-columns:repeat(3,1fr); } }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px; }
-  .card h2 { font-size:1.15rem; margin:0 0 4px; }
-  .card p { margin:0; color:var(--muted); font-size:0.95rem; }
-  .swatch { height:72px; border-radius:10px; margin-bottom:12px; }
-  footer { border-top:1px solid var(--line); padding-top:16px; color:var(--muted); font-size:0.95rem; }
-  a { color:var(--accent); }
-</style>
+<title>Kopu Games: small puzzle games with fair rules</title>
+<meta name="description" content="Kopu Games is an independent mobile studio making small puzzle games with fair rules: Peel Away, Slide Out, TiltSort and Math Maniac.">
+<link rel="canonical" href="https://kopugames.com/">
+<meta name="theme-color" content="#fff8f0" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14121b" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kopu Games">
+<meta property="og:title" content="Kopu Games: small puzzle games with fair rules">
+<meta property="og:description" content="Kopu Games is an independent mobile studio making small puzzle games with fair rules: Peel Away, Slide Out, TiltSort and Math Maniac.">
+<meta property="og:url" content="https://kopugames.com/">
+<meta property="og:image" content="https://kopugames.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preload" href="assets/fonts/fredoka.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/site.css">
+<script>try{var t=localStorage.getItem("kopu-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body>
-<main>
-<header>
-  <h1>Kopu Games</h1>
-  <p class="tag">Small, fair puzzle games for phones. One mechanic each, levels you can always solve, no timers.</p>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="34" height="34">Kopu Games</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html#games">Games</a>
+      <a class="hide-sm" href="index.html#studio">Studio</a>
+      <a class="hide-sm" href="index.html#test">Play early</a>
+      <a href="index.html#contact">Contact</a>
+      <button class="theme-btn" type="button" aria-label="Switch theme"><svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button>
+    </nav>
+  </div>
 </header>
-
-<section class="games">
-  <div class="card">
-    <div class="swatch" style="background:linear-gradient(160deg,#ff7a59,#c4324a)"></div>
-    <h2>Peel Away: Pin Sort Puzzle</h2>
-    <p>Pull the pins that hold stacked plates. Sort each color into its dock and peel the board clean.</p>
-  </div>
-  <div class="card">
-    <div class="swatch" style="background:linear-gradient(160deg,#36a0d2,#1c3e8c)"></div>
-    <h2>Slide Out - Arrow Slide Puzzle</h2>
-    <p>Tap arrows to slide pieces off the board. Mirrors bend paths, gates take their colors in order.</p>
-  </div>
-  <div class="card">
-    <div class="swatch" style="background:linear-gradient(160deg,#8c5ce6,#3c2278)"></div>
-    <h2>TiltSort - Gravity Match</h2>
-    <p>Rotate the jar and let the tiles fall. Line up three of a color to clear them within the move limit.</p>
+<main id="main">
+<section class="hero dots">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Independent mobile game studio</p>
+      <h1>Small puzzle games with <em>fair</em> rules.</h1>
+      <p class="lede">Kopu Games makes bite-sized puzzle and brain games for your phone. One clear idea per game, levels checked by a solver before they ship, and ads you can take or leave.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#games">Meet the games</a>
+        <a class="btn btn-ghost" href="#test">Play them early</a>
+      </div>
+    </div>
+    <div class="collage">
+      <a href="games/peel-away.html" aria-label="Peel Away"><img src="assets/img/peel-away.png" alt="Peel Away icon" width="512" height="512"></a>
+      <a href="games/slide-out.html" aria-label="Slide Out"><img src="assets/img/slide-out.png" alt="Slide Out icon" width="512" height="512"></a>
+      <a href="games/tiltsort.html" aria-label="TiltSort"><img src="assets/img/tiltsort.png" alt="TiltSort icon" width="512" height="512"></a>
+      <a href="games/math-maniac.html" aria-label="Math Maniac"><img src="assets/img/math-maniac.png" alt="Math Maniac icon" width="512" height="512"></a>
+    </div>
   </div>
 </section>
 
-<footer>
-  <p><a href="privacy.html">Privacy policy</a> &middot; Support: <a href="mailto:support@kopugames.com">support@kopugames.com</a></p>
-  <p>&copy; 2026 Kopu Games</p>
-</footer>
+<section id="games">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Our games</p>
+      <h2>Four games, one promise</h2>
+      <p>Each one is built around a single mechanic you can learn in seconds and keep chewing on for weeks. All four are on their way to Google Play.</p>
+    </div>
+    <div class="games">
+      <a class="game" data-game="peel" href="games/peel-away.html">
+        <div class="band"><img class="icon" src="assets/img/peel-away.png" alt="" width="104" height="104" loading="lazy"></div>
+        <div class="body">
+          <h3>Peel Away</h3>
+          <p class="sub">Pin Sort Puzzle</p>
+          <p class="pitch">Pull the pins, sort the colors, peel the board clean. Calm logic, zero timers.</p>
+          <div class="chips"><span class="chip">Sorting</span><span class="chip">Logic</span><span class="chip">Relaxing</span></div>
+          <div class="foot"><span class="status">Coming soon to Google Play</span><span class="more">Learn more</span></div>
+        </div>
+      </a>
+      <a class="game" data-game="slide" href="games/slide-out.html">
+        <div class="band"><img class="icon" src="assets/img/slide-out.png" alt="" width="104" height="104" loading="lazy"></div>
+        <div class="body">
+          <h3>Slide Out</h3>
+          <p class="sub">Arrow Slide Puzzle</p>
+          <p class="pitch">Tap arrows, slide pieces off the board, feed the gates in order. Pure logic.</p>
+          <div class="chips"><span class="chip">Logic</span><span class="chip">Paths</span><span class="chip">Brain</span></div>
+          <div class="foot"><span class="status">Coming soon to Google Play</span><span class="more">Learn more</span></div>
+        </div>
+      </a>
+      <a class="game" data-game="tilt" href="games/tiltsort.html">
+        <div class="band"><img class="icon" src="assets/img/tiltsort.png" alt="" width="104" height="104" loading="lazy"></div>
+        <div class="body">
+          <h3>TiltSort</h3>
+          <p class="sub">Gravity Match</p>
+          <p class="pitch">Rotate the jar, let the tiles fall, line up three of a color. Think before you tilt.</p>
+          <div class="chips"><span class="chip">Gravity</span><span class="chip">Match 3</span><span class="chip">Brain</span></div>
+          <div class="foot"><span class="status">Coming soon to Google Play</span><span class="more">Learn more</span></div>
+        </div>
+      </a>
+      <a class="game" data-game="math" href="games/math-maniac.html">
+        <div class="band"><img class="icon" src="assets/img/math-maniac.png" alt="" width="104" height="104" loading="lazy"></div>
+        <div class="body">
+          <h3>Math Maniac</h3>
+          <p class="sub">Think fast, tap faster</p>
+          <p class="pitch">A quick-calculation arcade. Tap the numbers that fit the rule before they get away.</p>
+          <div class="chips"><span class="chip">Mental math</span><span class="chip">Arcade</span><span class="chip">Daily workout</span></div>
+          <div class="foot"><span class="status">Coming soon to Google Play</span><span class="more">Learn more</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="studio" class="band-soft">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">How we make games</p>
+      <h2>Fair by design</h2>
+      <p>The rules we hold every game to, from the first greybox prototype to the store release.</p>
+    </div>
+    <div class="principles">
+      <div class="principle">
+        <div class="tile" style="background:var(--peel)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+        <h3>Learn it in ten seconds</h3>
+        <p>One mechanic per game, taught by playing rather than by a wall of tutorial text.</p>
+      </div>
+      <div class="principle">
+        <div class="tile" style="background:var(--slide)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="m8 12.5 3 3 5-6"/></svg></div>
+        <h3>Solvable, every time</h3>
+        <p>Puzzle levels are generated, then checked by a solver. If a board cannot be cleared, it never ships.</p>
+      </div>
+      <div class="principle">
+        <div class="tile" style="background:var(--tilt)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Short sessions</h3>
+        <p>Most levels take a minute or two. Play one at the bus stop or twenty on the sofa.</p>
+      </div>
+      <div class="principle">
+        <div class="tile" style="background:var(--math)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10z"/></svg></div>
+        <h3>Ads you choose</h3>
+        <p>Hints and bonuses come from optional rewarded ads. Everything in the game can be earned by playing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap split">
+    <div class="about-copy">
+      <p class="eyebrow">The studio</p>
+      <h2 class="section-title" style="font-size:clamp(2rem,4.4vw,2.9rem);margin-bottom:20px">One developer, a lot of prototypes</h2>
+      <p>Kopu Games is an independent studio run by a single developer. Every game starts as a greybox prototype and only gets art once the core puzzle is fun on its own.</p>
+      <p>We make the games we want on our own phones: no dark patterns, no fake countdowns, no paywall in front of the fun. If a level ever feels unfair, we want to hear about it.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>4</b><span>games on the way</span></div>
+      <div class="stat"><b>90</b><span>solver-checked levels at launch</span></div>
+      <div class="stat"><b>0</b><span>accounts or sign-ins needed</span></div>
+      <div class="stat"><b>1</b><span>developer, reading every email</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="test" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-card">
+      <p class="eyebrow" style="color:#fff;opacity:.85">Play early</p>
+      <h2>Help us launch on Google Play</h2>
+      <p>New developers on Google Play run a closed test with at least 12 testers for 14 days before a game goes public. Play our games before anyone else and tell us what you think.</p>
+      <ol class="steps">
+        <li>Email us the Google account you use on the Play Store.</li>
+        <li>Tell us which games you want to try, or all four.</li>
+        <li>Install from the invite link and keep the game for 14 days.</li>
+      </ol>
+      <div class="ctas">
+        <a class="btn btn-light" href="mailto:hello@kopugames.com?subject=I%27d%20like%20to%20test%20Kopu%20Games&body=Google%20account%20I%20use%20on%20Play%3A%20%0AGames%20I%27d%20like%20to%20try%20(Peel%20Away%2C%20Slide%20Out%2C%20TiltSort%2C%20Math%20Maniac%2C%20or%20all)%3A%20%0APhone%20model%3A%20"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>Become a tester</a>
+        <a class="btn btn-outline" href="privacy.html">How we handle data</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="band-soft">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Contact</p>
+      <h2>Say hello</h2>
+      <p>A real person reads every message, usually within a day or two.</p>
+    </div>
+    <div class="principles" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+      <div class="principle">
+        <div class="tile" style="background:var(--peel)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg></div>
+        <h3>General and press</h3>
+        <p>Ideas, partnerships, press keys or just a hello.</p>
+        <p style="margin-top:10px"><a href="mailto:hello@kopugames.com"><strong>hello@kopugames.com</strong></a></p>
+      </div>
+      <div class="principle">
+        <div class="tile" style="background:var(--slide)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><path d="m8 12.5 3 3 5-6"/></svg></div>
+        <h3>Game support</h3>
+        <p>Bugs, purchases or a level that feels impossible. Include the game, level and phone model.</p>
+        <p style="margin-top:10px"><a href="mailto:support@kopugames.com"><strong>support@kopugames.com</strong></a></p>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Kopu Games","url":"https://kopugames.com","logo":"https://kopugames.com/assets/img/apple-touch-icon.png","email":"hello@kopugames.com"}</script>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="" width="34" height="34">Kopu Games</a>
+        <p class="blurb">Small puzzle games with fair rules, made by an independent developer.</p>
+      </div>
+      <div>
+        <h4>Games</h4>
+        <ul>
+          <li><a href="games/peel-away.html">Peel Away</a></li>
+          <li><a href="games/slide-out.html">Slide Out</a></li>
+          <li><a href="games/tiltsort.html">TiltSort</a></li>
+          <li><a href="games/math-maniac.html">Math Maniac</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Studio</h4>
+        <ul>
+          <li><a href="index.html#test">Become a tester</a></li>
+          <li><a href="mailto:hello@kopugames.com">hello@kopugames.com</a></li>
+          <li><a href="mailto:support@kopugames.com">support@kopugames.com</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>&copy; 2026 Kopu Games. All rights reserved.</span>
+      <span><a href="privacy.html">Privacy</a></span>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js" defer></script>
 </body>
 </html>
